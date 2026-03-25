@@ -1,0 +1,188 @@
+/* Button Styles */
+.btn-primary {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.98);
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+}
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+/* Typography Styles */
+.text-allura-xl {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+/* Card Styles */
+.card-glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.dark .card-glass {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+.light .card-glass {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-accent {
+  background: rgba(192, 132, 252, 0.05);
+  border: 1px solid rgba(192, 132, 252, 0.1);
+}
+.dark .card-accent {
+  background: rgba(192, 132, 252, 0.05);
+  border-color: rgba(192, 132, 252, 0.1);
+}
+.light .card-accent {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Reviews Carousel Styles */
+.reviews-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 -16px;
+}
+
+.reviews-track {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 16px 48px 16px 16px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+}
+.reviews-track:active {
+  cursor: grabbing;
+}
+.reviews-track::-webkit-scrollbar {
+  display: none;
+}
+.review-card {
+  flex-shrink: 0;
+  width: 240px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: #d1d5db;
+}
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+.review-card:hover .review-avatar {
+  transform: scale(1.1);
+}
+.review-user {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+.review-card:hover .review-user {
+  color: #1f2937;
+}
+.review-rating {
+  font-size: 14px;
+  color: #f59e0b;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+.review-card:hover .review-rating {
+  transform: scale(1.05);
+}
+.review-text {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.reviews-gradient-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  background: linear-gradient(to right, white 0%, white 40%, transparent 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+.reviews-gradient-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  background: linear-gradient(to left, white 0%, white 40%, transparent 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* 自动循环滚动评价 */
+.reviews-track-auto {
+  display: flex;
+  overflow: visible;
+  gap: 16px;
+  padding: 16px 48px 16px 16px;
+  animation: scroll-reviews 15s linear infinite;
+}
+
+.reviews-track-auto:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-reviews {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+.problem-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
