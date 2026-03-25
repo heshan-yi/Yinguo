@@ -1,0 +1,1487 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type  content="text/html; charset=gb2312" ><meta name=ProgId  content=Word.Document ><meta name=Generator  content="Microsoft Word 14" ><meta name=Originator  content="Microsoft Word 14" ><link rel=File-List  href="阴阳师手游-部分模块详细拆解.files/filelist.xml" ><title></title><!--[if gte mso 9]><xml><o:DocumentProperties><o:Author>Apache POI</o:Author><o:LastAuthor>尹果(2023012040)</o:LastAuthor><o:Revision>1</o:Revision><o:Pages>19</o:Pages><o:Characters>4401</o:Characters><o:Lines>1</o:Lines><o:Paragraphs>1</o:Paragraphs></o:DocumentProperties><o:CustomDocumentProperties><o:KSOProductBuildVer dt:dt="string" >2052-12.1.0.23542</o:KSOProductBuildVer><o:ICV dt:dt="string" >C0E919036A97453884961A2CC2EDEE78_13</o:ICV></o:CustomDocumentProperties></xml><![endif]--><!--[if gte mso 9]><xml><o:OfficeDocumentSettings></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing><w:PunctuationKerning></w:PunctuationKerning><w:View>Web</w:View><w:Compatibility><w:DontGrowAutofit/><w:DoNotExpandShiftReturn/><w:UseFELayout/></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="260" >
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Normal" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footer" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="caption" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of figures" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope return" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="line number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="page number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of authorities" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="macro" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toa heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Closing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  UnhideWhenUsed="false"  Name="Default Paragraph Font" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Message Header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Subtitle" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Salutation" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Date" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Note Heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Block Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Hyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="FollowedHyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Strong" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Emphasis" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Document Map" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Plain Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="E-mail Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal (Web)" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Acronym" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Cite" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Code" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Definition" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Keyboard" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Preformatted" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Sample" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Typewriter" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Variable" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  UnhideWhenUsed="false"  Name="Normal Table" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation subject" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / a / i" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / 1.1 / 1.1.1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Article / Section" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Contemporary" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Elegant" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Professional" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Subtle 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Subtle 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Balloon Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Theme" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Placeholder Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No Spacing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Paragraph" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Intense Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 6" ></w:LsdException>
+</w:LatentStyles></xml><![endif]--><style>
+@font-face{
+font-family:"Times New Roman";
+}
+
+@font-face{
+font-family:"宋体";
+}
+
+@font-face{
+font-family:"Calibri";
+}
+
+@font-face{
+font-family:"Wingdings";
+}
+
+@font-face{
+font-family:"Arial";
+}
+
+@font-face{
+font-family:"等线";
+}
+
+@list l0:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l1:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l2:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l3:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l4:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l5:level1{
+mso-level-start-at:3;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l6:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l7:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l8:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l9:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l10:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l11:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l12:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l13:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l14:level1{
+mso-level-start-at:3;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l15:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l16:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l17:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l18:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l19:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l20:level1{
+mso-level-start-at:3;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l21:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l22:level1{
+mso-level-start-at:3;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l23:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l24:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l25:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l26:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l27:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l28:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l29:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l30:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l31:level1{
+mso-level-start-at:4;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l32:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l33:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l34:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l35:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l36:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l37:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l38:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l39:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l40:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l41:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l42:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l43:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l44:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l45:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l46:level1{
+mso-level-start-at:3;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l47:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l48:level1{
+mso-level-start-at:3;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l49:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l50:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l51:level1{
+mso-level-start-at:3;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l52:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l53:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l54:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l55:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l56:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l57:level1{
+mso-level-start-at:2;
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+@list l58:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman';color:rgb(51,112,255);}
+
+p.MsoNormal{
+mso-style-name:正文;
+mso-style-parent:"";
+margin:0pt;
+margin-bottom:.0001pt;
+mso-pagination:none;
+text-align:justify;
+text-justify:inter-ideograph;
+font-family:Calibri;
+font-size:10.5000pt;
+}
+
+span.10{
+font-family:Calibri;
+}
+
+span.msoIns{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:underline;
+text-underline:single;
+color:blue;
+}
+
+span.msoDel{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:line-through;
+color:red;
+}
+
+table.MsoNormalTable{
+mso-style-name:普通表格;
+mso-style-parent:"";
+mso-style-noshow:yes;
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-family:'Times New Roman';
+font-size:10.0000pt;
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;
+}
+@page{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}@page Section0{
+size:595.2500pt 842.0000pt;
+mso-header:url("阴阳师手游-部分模块详细拆解.files/header.html") h0;
+mso-footer:url("阴阳师手游-部分模块详细拆解.files/header.html") f0;
+}
+div.Section0{page:Section0;}</style></head><body style="tab-interval:25pt;" ><!--StartFragment--><div class="Section0" ><p class=MsoNormal  style="margin-top:24.0000pt;margin-bottom:24.0000pt;margin-left:0.0000pt;
+line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:26.0000pt;" ><font face="等线" >阴阳师手游</font>-<font face="等线" >部分模块详细拆解</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="552"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解15.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:18.0000pt;" >1. </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;" ><font face="等线" >个人信息页面</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >1.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >头像</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.1.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片展示</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><table class=MsoNormalTable  border=0  cellspacing=0  style="border-collapse:collapse;margin-left:-0.6000pt;mso-table-layout-alt:fixed;
+border:none;mso-padding-alt:0.0000pt 0.5000pt 0.0000pt 0.5000pt ;" ><tr><td width=329  valign=top  style="width:164.7000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:none;
+border-right:none;border-top:none;border-bottom:none;" ><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="font-family:Calibri;font-size:10.5000pt;" ><img width="203"  height="173"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解45.png" ></span><span style="font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p></td><td width=498  valign=top  style="width:249.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:none;
+border-right:none;border-top:none;border-bottom:none;" ><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><span style="font-family:Calibri;font-size:10.5000pt;" ><img width="316"  height="178"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解47.png" ></span><span style="font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p></td></tr></table><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.1.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l23 level1 lfo1;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >降低社交认知成本</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l15 level1 lfo2;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >提升用户粘性</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l46 level1 lfo3;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >刺激消费</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >建立高效的身份识别系统，降低社交成本</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l13 level1 lfo4;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >视觉身份标识：将头像</font>/<font face="等线" >头像框设计为即时的战力与资历说明书，使玩家在社交、排行榜等界面能在</font><font face="Arial" >1</font><font face="等线" >秒内完成实力评估与互动决策（如组队、挑战）；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l9 level1 lfo5;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >营造归属感：通过公会限定、活动专属等设计，制造</font><font face="Arial" >“</font><font face="等线" >圈内人</font><font face="Arial" >”</font><font face="等线" >凭证，佩戴相同标识能瞬间激发群体认同与共荣誉感，强化社群凝聚力；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >强化情感联结，提升用户粘性</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l25 level1 lfo6;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >个性化引导：模块化的设计将头像和头像框分开进行设置，降低自定义门槛，引导玩家形成习惯，提高玩家投入的时间成本，强化该环节的成就感和价值感；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l34 level1 lfo7;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >绑定游戏内容：将头像作为游戏历程的奖励，让玩家的每一次重大投入（时间、技巧）都转化为一个可展示的</font><font face="Arial" >“</font><font face="等线" >藏品</font><font face="Arial" >”</font><font face="等线" >，玩家看到该头像都会回想起获取时的努力与成就感，产生和游戏个人历史层面的情感联结；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >刺激消费</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l53 level1 lfo8;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >提供预览区域：图片预览提供实时的视觉刺激，营造</font><font face="Arial" >“</font><font face="等线" >已拥有</font><font face="Arial" >”</font><font face="等线" >的错觉，刺激玩家的占有欲，降低决策风险，刺激玩家的即刻消费欲望；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l24 level1 lfo9;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >建立头像体系：已获得的稀有头像排在普通头像前面，通过视觉上数量和美术效果的对比制造</font><font face="Arial" >“</font><font face="等线" >普通</font><font face="Arial" >”</font><font face="等线" >与</font><font face="Arial" >“</font><font face="等线" >稀有</font><font face="Arial" >”</font><font face="等线" >的阶级感，激发攀比与收集欲望，引导玩家进行消费；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l5 level1 lfo10;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >长期价值：可以与各种活动、联动、成就和付费内容进行绑定，将消费深度植入玩家的成长路径中，使付费成为追求终极目标的自然选择，提供了长远的消费渠道；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="329"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解635.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >1.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >名帖</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.2.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片展示</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><table class=MsoNormalTable  border=0  cellspacing=0  style="border-collapse:collapse;margin-left:-0.6000pt;mso-table-layout-alt:fixed;
+border:none;mso-padding-alt:0.0000pt 0.5000pt 0.0000pt 0.5000pt ;" ><tr><td width=367  valign=top  style="width:183.7000pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:none;
+border-right:none;border-top:none;border-bottom:none;" ><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="font-family:Calibri;font-size:10.5000pt;" ><img width="228"  height="132"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解656.png" ></span><span style="font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p></td><td width=460  valign=top  style="width:230.2500pt;padding:3.0000pt 6.0000pt 1.5000pt 6.0000pt ;border-left:none;
+border-right:none;border-top:none;border-bottom:none;" ><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><span style="font-family:Calibri;font-size:10.5000pt;" ><img width="291"  height="134"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解658.png" ></span><span style="font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p></td></tr></table><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.2.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l35 level1 lfo11;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >建立深度社交</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l47 level1 lfo12;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >提升用户粘性</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l14 level1 lfo13;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >刺激多维消费</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >进一步筛选，建立深度社交</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l43 level1 lfo14;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >提供信任的凭证：名帖中的段位、图鉴收集和连续签到是需要长期、多维投入才能积累的硬核数据。在组建高难副本固定队、选择公会核心成员时，名帖提供了远比头像更可靠、更详细的</font> <font face="Arial" >“</font><font face="等线" >信用报告</font><font face="Arial" >”</font><font face="等线" >，极大降低了深度合作（高投入社交）的试错风险</font><font face="Arial" >, </font><font face="等线" >为深度社交提供可靠的信任基础；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l21 level1 lfo15;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >社交筛选：将游戏核心内容提炼成数据，玩家可以快速扫描关键词（如段位、收集度）筛选社交对象，大幅提升社交互动的效率，促进更高质量的深度社交；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >可视化投入成本，提升用户粘性</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l33 level1 lfo16;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >量化沉没成本：名帖系统将玩家所有的游戏成就聚合成一张公开展示的名片，玩家考虑放弃游戏时会直观面对投入陈本的数据，提高了用户流失的心理门槛，提高留存率；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l18 level1 lfo17;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >游戏内容绑定：将游戏的各种内容设计为可以增长的数据，推动玩家为追求数字增长而维持日常活跃优化名帖展示，在持续的累积中获得稳定成就感，提高每日在线时长；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >刺激多维消费</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l17 level1 lfo18;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >名帖皮肤：可以更换的展示框架，能在视觉上让玩家的所有硬核数据展示看起来更加耀眼，让玩家产生一种赋能于所有既有资产的价值感知，推动消费；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l7 level1 lfo19;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >精细化消费：拆解成多个可装饰模块，相当于构建了一个由基础数据和自定义商品构成的隐形商城，满足玩家深层的策划和创造欲望，持续刺激玩家消费的欲望；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="331"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解1232.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >1.3 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >昵称</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.3.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="94"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解1251.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.3.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >功能分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l41 level1 lfo20;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >特点：唯一性、不容易更改（需要花钱）</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l50 level1 lfo21;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >场景：名片、结算、战斗、聊天等</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l28 level1 lfo22;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >建立社交锚点</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l40 level1 lfo23;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >创建消费点</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >建立社交锚点</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l8 level1 lfo24;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >命名仪式化：要求唯一昵称，让玩家投入时间精力构思专属名称，经历命名的仪式，产生初始拥有感，一定程度上降低新用户流失率；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l57 level1 lfo25;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >增强记忆成本：昵称会在所有社交场景强制显示，玩家在长期社交中不断被他人以昵称称呼建立起社交记忆，形成身份认同，提升玩家的回归率；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >付费修改，创建消费点</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >定价修改昵称，当玩家因为情绪变化（如情感破裂）产生改名需求时，有慎重决策、重新开始的心理安慰，创造小额付费流；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="203"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解1529.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >1.4 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >生日</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.4.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="543"  height="92"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解1547.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.4.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >功能分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l55 level1 lfo26;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >特点：自定义；会有派对活动、特殊奖励</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l12 level1 lfo27;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >限制：从生日开始</font>14<font face="等线" >天期间内，</font><font face="Arial" >90</font><font face="等线" >天内无法修改、一年一次</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l51 level1 lfo28;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >场景：自行设置权限（个人信息、聊天界面、好友界面）</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l6 level1 lfo29;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >强化情感联结</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l39 level1 lfo30;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >激活沉默社交、推动特殊消费</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >创建游戏内的归属感，强化情感联结</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l2 level1 lfo31;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >归属感设置：将生日的数据设置为可展示的社交元素，由式神主动举办派对送出限定礼物，将单项养成关系变成伪双向奔赴，玩家为了获得完整体验（或者资源）更愿意填写展示生日并规律性登录，增强对游戏的归属感，既获得用户数据又提升了玩家在生日周期内的登录率和活跃时长；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l45 level1 lfo32;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >容错机制：派对奖励和奖励发放共计</font>28<font face="等线" >天，提供了极大的登录容错空间，避免玩家未拿到奖励的挫败感，产生损失厌恶感，提升后续参与的意愿；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:12.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:5;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:12.0000pt;" ><font face="等线" >激活沉默社交、推动特殊消费</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >设置祝福赠礼阶段（生日及前</font>2<font face="等线" >天）好友间的赠礼行为形成惊喜和人情网络，生日的玩家获得被关注的满足感，赠礼方获得表达祝福的成就感，双方形成人情关系陷入</font><font face="Arial" >“</font><font face="等线" >人情互惠</font><font face="Arial" >”</font><font face="等线" >的网络；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >特殊玩家（情侣</font>/<font face="等线" >暧昧对象）会被置于一个公开的、有比较的浪漫表达场所。付费特殊礼物成为表达心意、彰显重视程度、乃至进行关系竞争的 </font><font face="Arial" >“</font><font face="等线" >硬通货</font><font face="Arial" >” </font><font face="等线" >，驱动基于现实情感的定向高额消费；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="246"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解2069.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >1.5 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >编号</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.5.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="295"  height="65"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解2088.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.5.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >方便管理和定位</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >强制生成并永久绑定该账户，不可修改。玩家在添加好友、举办、交易等高信任</font>/<font face="等线" >高风险场景下保证对象的准确性，提供安全保障也降低了客服和运营成本，为安全打击违规操作提供凭证，保障虚拟经济的秩序；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="489"  height="189"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解2216.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >1.6 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >扩展包</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.6.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="430"  height="139"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解2235.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.6.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >降低体验门槛</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >可配置：</font></span></b><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >将游戏资源模块化，标注大小和功能后果，让玩家根据自身设备条件和喜好进行下载，带来一些微妙的参与感，也降低了因为手机存储不足导致的部分玩家流失；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="246"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解2344.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >1.7 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >音画设置</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.7.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="255"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解2366.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >1.7.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >增强用户体验，防止用户流失</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l58 level1 lfo33;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >减少初期的流失：将游戏音画的体验拆成小的板块，提供可以设置的选项，玩家可以根据个人喜好和设备性能自由选择效果进行体验，降低体验门槛减少体验不好的挫败感，有效降低初期因为兼容或性能导致的用户流失；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l0 level1 lfo34;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >满足长期体验需求：玩家可以通过随时调节参数获得不同时段的舒适体验，减少重复操作和视听干扰带来的烦躁感，有效延长单次游戏的时长，降低长时间游戏带来的疲劳感；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="296"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解2582.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:18.0000pt;" >2. </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;" ><font face="等线" >好友系统</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >2.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >系统分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >设计目的：</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l32 level1 lfo35;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >降低玩家进行社交相关行为的心理与操作成本，使社交成为可选而非负担（不强迫）</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l44 level1 lfo36;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >将好友关系转化为可持续服务核心玩法的资源与协作网络（协作）</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l22 level1 lfo37;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >为玩家提供长期、低强度的情感连接载体，增强账号的黏性（留存）</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >面向对象：所有玩家</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >系统入口：主页面</font><font face="Arial" >→</font><font face="等线" >卷轴</font><font face="Arial" >→</font><font face="等线" >好友</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >系统内容：好友聊天、添加好友、个人空间、协战设置</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >2.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >好友界面</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >2.2.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="255"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解2775.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >2.2.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l19 level1 lfo38;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >提供便捷的沟通渠道，降低社交成本</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l36 level1 lfo39;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >设置礼物机制，鼓励社交行为</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >提供便捷的沟通渠道，降低社交成本</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l56 level1 lfo40;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >好友列表分层：区分不同类型的社交关系，帮助玩家快速筛选出不同场景的目标联系人，了解好友的状态，高效社交；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l11 level1 lfo41;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >会话区：标准化的会话设计，语音转文字尽量避免了游戏内横屏打字的不便，表情包也同样是一种轻量化的表达载体，降低了沟通的门槛，避免聊天成为学习成本；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >设置礼物机制，鼓励社交行为</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l4 level1 lfo42;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >友情点：作为低成本的每日社交的</font><font face="Arial" >“</font><font face="等线" >打卡</font><font face="Arial" >”</font><font face="等线" >任务，鼓励玩家与好友进行至少一次的互动（赠送</font><font face="Arial" >/</font><font face="等线" >接收），维持日常的社交参与；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l10 level1 lfo43;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >同心之兰福袋：可以互相购买赠送，但需要共同完成游戏任务获得奖励，将社交互动与核心玩法捆绑，用共同目标和共享利益鼓励玩家通过协作建立起更稳固的社交关系；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l48 level1 lfo44;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >好友福袋：需要直接付费购买的高价值礼物，赠送这类福袋能强烈地传递感谢、认可或巩固联盟，满足玩家高阶的情感表达与认同需求，帮助建立起游戏内的人情关系和地位；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="354"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解3200.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >2.3 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >添加界面</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >2.3.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="255"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解3220.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >2.3.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >提供多元化拓展关系的渠道，帮助玩家发现和建立新的社交关系</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >多入口并行</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l1 level1 lfo45;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >搜素功能</font>&<font face="等线" >扫描：精准搜索，帮助有直接添加好友需求的玩家精准快速的建立联系；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l29 level1 lfo46;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >系统推荐：筛选有一定联系的玩家，降低添加好友的门槛，鼓励社交保守或者没有明确社交目标的玩家建立新的社交关系；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >群组功能拆分</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l3 level1 lfo47;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >群组：设置独立入口和管理逻辑，不混入个人好友池，玩家可以通过群组分类社交的类别，防止社交扩大后复杂度上升；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="344"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解3435.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >2.4 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >空间界面</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >2.4.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="255"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解3455.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >2.4.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >提供一个低干扰的的自我展示和互动空间，提供持续性的互动场景</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >展示个人游戏成果</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l49 level1 lfo48;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >个人展示区：玩家通过装扮空间、发布动态来经营个人形象；通过浏览他人空间、点赞留言进行非即时互动；权限设置让玩家掌控社交边界，这些个人展示将游戏成就与审美转化为社交吸引力，构建了一个立体的玩家形象；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l54 level1 lfo49;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >留言板：留言板创造了无需同时在线也能持续互动的场景，深化情感连结；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="351"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解3653.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >2.5 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >协战界面</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >2.5.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="255"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解3673.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >2.5.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >将好友关系转化为可被感知、可被量化的玩法助力，让社交价值直接反馈到核心玩法中。</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >信息透明化，提升互惠意识</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >数据展示：界面上会明确展示协助的次数、进度和使用记录，玩家明确了</font><font face="Arial" >”</font><font face="等线" >帮了什么，被帮了什么</font><font face="Arial" >“</font><font face="等线" >，促进人际往来互惠；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="203"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解3808.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:19.0000pt;margin-bottom:7.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:1;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:18.0000pt;" >3. </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:18.0000pt;" ><font face="等线" >外观活动</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >3.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >活动分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >活动目的：</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l42 level1 lfo50;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >促进日活，提供持续上线的动力</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l37 level1 lfo51;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >鼓励玩家之间的交互，为春节活动做铺垫</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >活动时间：</font>1<font face="等线" >月</font><font face="Arial" >28</font><font face="等线" >日维护后</font><font face="Arial" >—2</font><font face="等线" >月</font><font face="Arial" >10</font><font face="等线" >日</font><font face="Arial" >23:59</font><font face="等线" >；全天开启，每日凌晨刷新任务</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >活动对象：</font>15<font face="等线" >级以上的玩家</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >活动入口：点击主界面</font><font face="Arial" >“</font><font face="等线" >皮肤领取</font><font face="Arial" >”</font><font face="等线" >进入</font><font face="Arial" >/</font><font face="等线" >点击主页面</font><font face="Arial" >“</font><font face="等线" >活动总览</font><font face="Arial" >”</font><font face="等线" >进入</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >活动内容：活动期间通过邀请好友助力，或完成每日指定任务获取【藤原宝玉】，收集满</font>100<font face="等线" >个【藤原宝玉】可免费领取【藤原道长</font><font face="Arial" >&#183;</font><font face="等线" >闲问兰音】皮肤</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >3.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >皮肤展示区</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >3.2.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="255"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解4041.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(143,149,158);font-size:11.0000pt;" ><br style='mso-special-character:line-break'></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >3.2.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l52 level1 lfo52;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >提升皮肤视觉价值感知</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l26 level1 lfo53;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+mso-ansi-font-weight:bold;font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:11.0000pt;" ><font face="等线" >提供持续的动力渠道</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >强化视觉核心，提升皮肤视觉价值感知</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >动态展示：通过高比例、可旋转的动态模型展示皮肤细节，将皮肤作为界面的视觉中心，使玩家在短时间内完成对皮肤品质与完成度的直观判断，不仅满足玩家的观赏需求，也通过反复查看行为加深对皮肤的情感印象，为后续获取行为提供正向动机基础；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >引导活动节奏，提供持续的动力渠道</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >可视化进度：将最终目标拆解为多个可重复完成的日常任务，并统一转化为活动代币的累积过程，使玩家关注点从单次任务完成转向整体进度推进，降低中断参与带来的挫败感；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="241"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解4317.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:16.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:2;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:16.0000pt;" >3.3 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:16.0000pt;" ><font face="等线" >任务区域</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >3.3.1 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >图片</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="255"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解4338.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:15.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:3;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;color:rgb(51,112,255);font-size:15.0000pt;" >3.3.2 </span><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:15.0000pt;" ><font face="等线" >分析</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计目的</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l27 level1 lfo54;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >提供低门槛入口，维持参与节奏</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l16 level1 lfo55;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >提供多样的途径，拓宽参与范围</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >设计思路</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >提供低门槛入口，维持参与节奏</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l38 level1 lfo56;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >活动代币：用活动限定资源隔离活动进度与其他系统的影响，以统一不同玩家的参与起点；并通过每日获取上限控制进度速度，引导玩家形成相对稳定的参与节奏；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l30 level1 lfo57;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >任务列表：用纵向列表形式集中展示当前可执行行为和奖励反馈，并提供清晰的条件描述和一键跳转入口，减少决策与操作成本，引导玩家更容易开始并持续参与活动；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l20 level1 lfo58;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >全局倒计时：明确展示活动剩余的时间，引导玩家建立参与周期的整体预期，形成相对稳定的参与节奏，而非临时被动补做；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >提供额外的途径，拓宽参与范围</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;mso-list:l31 level1 lfo59;" ><![if !supportLists]><span style="font-family:Arial;mso-fareast-font-family:等线;color:rgb(51,112,255);
+font-size:11.0000pt;" ><span style='mso-list:Ignore;' >4.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;font-size:11.0000pt;" ><font face="等线" >邀请助力：通过</font><font face="Arial" >“</font><font face="等线" >邀请助力</font><font face="Arial" >”</font><font face="等线" >等可选社交任务，引导玩家利用既有社交关系参与活动传播，但不将社交行为设为获取皮肤的唯一或核心路径，避免对低社交意愿玩家造成排斥；</font></span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:13.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;mso-outline-level:4;line-height:120%;" ><b style="mso-bidi-font-weight:normal" ><span style="mso-spacerun:'yes';font-family:Arial;mso-fareast-font-family:等线;
+line-height:120%;mso-ansi-font-weight:bold;font-size:14.0000pt;" ><font face="等线" >系统概述</font></span></b><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:center;line-height:120%;" ><img width="552"  height="201"  src="阴阳师手游-部分模块详细拆解.files/阴阳师手游-部分模块详细拆解4706.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:6.0000pt;margin-bottom:6.0000pt;margin-left:0.0000pt;
+text-align:left;line-height:120%;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body></html>
